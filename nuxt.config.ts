@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-icon',
     '@nuxt/devtools',
-    '@nuxtjs/html-validator',
     'nuxt-gtag',
   ],
 
