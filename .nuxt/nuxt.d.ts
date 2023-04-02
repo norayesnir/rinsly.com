@@ -4,7 +4,6 @@
 /// <reference types="@nuxtjs/i18n" />
 /// <reference types="nuxt-icon" />
 /// <reference types="@nuxt/devtools" />
-/// <reference types="@nuxtjs/html-validator" />
 /// <reference types="nuxt-gtag" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />

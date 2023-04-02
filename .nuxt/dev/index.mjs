@@ -20,8 +20,6 @@ import { parseURL, withoutBase, joinURL, withQuery, withLeadingSlash, withoutTra
 import { createStorage, prefixStorage } from 'file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/unstorage/dist/index.mjs';
 import unstorage_47drivers_47fs from 'file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/unstorage/drivers/fs.mjs';
 import { toRouteMatcher, createRouter } from 'file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/radix3/dist/index.mjs';
-import chalk from 'file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/chalk/source/index.js';
-import { HtmlValidate, formatterFactory } from 'file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/html-validate/dist/es/index.js';
 import { extname, join } from 'file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/pathe/dist/index.mjs';
 import { unified } from 'file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/unified/index.js';
 import { toString } from 'file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/mdast-util-to-string/index.js';
@@ -363,9 +361,9 @@ function cloneWithProxy(obj, overrides) {
 }
 const cachedEventHandler = defineCachedEventHandler;
 
-const config$1 = useRuntimeConfig();
+const config = useRuntimeConfig();
 const _routeRulesMatcher = toRouteMatcher(
-  createRouter({ routes: config$1.nitro.routeRules })
+  createRouter({ routes: config.nitro.routeRules })
 );
 function createRouteRulesHandler() {
   return eventHandler((event) => {
@@ -411,64 +409,8 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
-const getValidator = (options = {}) => {
-  return new HtmlValidate(options);
-};
-const useChecker = (validator, usePrettier = false, logLevel = "verbose") => {
-  const invalidPages = [];
-  const checkHTML = async (url, html) => {
-    let couldFormat = false;
-    try {
-      if (usePrettier) {
-        const { format } = await import('file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/prettier/index.js');
-        html = format(html, { parser: "html" });
-        couldFormat = true;
-      }
-    } catch (e) {
-      console.error(e);
-    }
-    html = typeof html === "string" ? html.replace(/ ?data-v-[-a-z0-9]+(=["']([-a-z0-9]|\/|:|\.)*["'])?/g, "") : html;
-    const { valid, results } = validator.validateString(html);
-    if (valid && !results.length) {
-      if (logLevel === "verbose") {
-        console.log(`No HTML validation errors found for ${chalk.bold(url)}`);
-      }
-      return;
-    }
-    if (!valid) {
-      invalidPages.push(url);
-    }
-    const formatter = couldFormat ? formatterFactory("codeframe") : await import('file:///Users/rinseyaron/Rinsly/rinsly.com/node_modules/@html-validate/stylish/dist/index.js').then((r) => r.default?.default ?? r.default ?? r);
-    const formattedResult = formatter?.(results);
-    const message = [
-      `HTML validation errors found for ${chalk.bold(url)}`,
-      formattedResult
-    ].filter(Boolean).join("\n");
-    if (valid) {
-      if (logLevel === "verbose" || logLevel === "warning") {
-        console.warn(message);
-      }
-    } else {
-      console.error(message);
-    }
-  };
-  return { checkHTML, invalidPages };
-};
-
-const config = {"usePrettier":false,"failOnError":false,"options":{"extends":["html-validate:document","html-validate:recommended","html-validate:standard"],"rules":{"svg-focusable":"off","no-unknown-elements":"error","void-style":"off","no-trailing-whitespace":"off","require-sri":"off","attribute-boolean-style":"off","doctype-style":"off","no-inline-style":"off"}},"logLevel":"verbose"};
-
-const _F023Y8E4z9 = (function(nitro) {
-  const validator = getValidator(config.options);
-  const { checkHTML } = useChecker(validator, config.usePrettier, config.logLevel);
-  nitro.hooks.hook("render:response", (response, { event }) => {
-    if (typeof response.body === "string" && (response.headers["Content-Type"] || response.headers["content-type"])?.includes("html")) {
-      checkHTML(event.req.url, response.body);
-    }
-  });
-});
-
 const plugins = [
-  _F023Y8E4z9
+  
 ];
 
 function defineRenderHandler(handler) {
