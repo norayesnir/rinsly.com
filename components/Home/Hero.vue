@@ -13,8 +13,8 @@
         </component>
       </div>
     </div>
-    <div>
-      <img :src="img.url" :alt="img._id" />
+    <div class="frame">
+      <img class="image" :src="img.url" :alt="img._id" />
     </div>
   </div>
 </template>
@@ -51,30 +51,53 @@ console.log(data.value.HomepageHero);
 .hero {
   height: calc(100vh - 97px);
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
 
   .content {
     margin: auto 0;
-    padding-bottom: 97px;
     max-width: 425px;
+
+    .title {
+      font-size: 48px;
+      line-height: 100%;
+      font-weight: 100;
+      margin: 0;
+    }
+
+    .desc {
+      color: var(--description);
+    }
+
+    .buttons {
+      display: inline-flex;
+      gap: 16px;
+    }
   }
 
-  .title {
-    font-size: 48px;
-    line-height: 100%;
-    font-weight: 100;
-    margin: 0;
-  }
+  .frame {
+    width: 100%;
 
-  .desc {
-    color: var(--description);
-  }
+    // ON MOBILE >750
+    display: none;
+    visibility: hidden;
 
-  .buttons {
-    display: inline-flex;
-    gap: 16px;
+    .image {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .hero {
+    flex-wrap: nowrap;
+
+    .frame {
+      display: inherit;
+      visibility: visible;
+    }
   }
 }
 </style>

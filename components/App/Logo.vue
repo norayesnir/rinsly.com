@@ -76,7 +76,6 @@
         </linearGradient>
       </defs>
     </svg>
-    <h2>Rinsly</h2>
   </div>
 </template>
 
@@ -86,9 +85,5 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 8px;
-
-  h2 {
-    margin: 0 0 -7px 0;
-  }
 }
 </style>
