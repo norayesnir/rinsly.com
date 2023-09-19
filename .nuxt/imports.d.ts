@@ -8,7 +8,5 @@ export { gql } from 'graphql-tag';
 export { useApollo, useAsyncQuery, useLazyAsyncQuery } from '../node_modules/@nuxtjs/apollo/dist/runtime/composables';
 export { useQuery, useLazyQuery, useMutation, useSubscription, useApolloClient, useQueryLoading, useMutationLoading, useSubscriptionLoading, useGlobalQueryLoading, useGlobalMutationLoading, useGlobalSubscriptionLoading } from '@vue/apollo-composable';
 export { usePinia } from '../node_modules/@pinia/nuxt/dist/runtime/composables';
-export { useCamera, useLoader, useLogger, usePointerEventHandler, useRaycaster, useRenderLoop, useRenderer, useSeek, useTexture, useTres, useTresContext, useTresContextProvider, extend as extendTres, TresObject } from '@tresjs/core';
-export { stats, useAnimations, useEnvironment, useFBX, useGLTF, useProgress, useTweakPane, useVideoTexture } from '@tresjs/cientos';
 export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';

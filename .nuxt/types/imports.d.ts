@@ -26,7 +26,6 @@ declare global {
   const defineSlots: typeof import('../../node_modules/vue')['defineSlots']
   const effect: typeof import('../../node_modules/vue')['effect']
   const effectScope: typeof import('../../node_modules/vue')['effectScope']
-  const extendTres: typeof import('../../node_modules/@tresjs/core')['extend']
   const getCurrentInstance: typeof import('../../node_modules/vue')['getCurrentInstance']
   const getCurrentScope: typeof import('../../node_modules/vue')['getCurrentScope']
   const gql: typeof import('../../node_modules/graphql-tag/main')['gql']
@@ -83,7 +82,6 @@ declare global {
   const shallowReadonly: typeof import('../../node_modules/vue')['shallowReadonly']
   const shallowRef: typeof import('../../node_modules/vue')['shallowRef']
   const showError: typeof import('../../node_modules/nuxt/dist/app')['showError']
-  const stats: typeof import('../../node_modules/@tresjs/cientos')['stats']
   const toRaw: typeof import('../../node_modules/vue')['toRaw']
   const toRef: typeof import('../../node_modules/vue')['toRef']
   const toRefs: typeof import('../../node_modules/vue')['toRefs']
@@ -91,23 +89,18 @@ declare global {
   const triggerRef: typeof import('../../node_modules/vue')['triggerRef']
   const unref: typeof import('../../node_modules/vue')['unref']
   const updateAppConfig: typeof import('../../node_modules/nuxt/dist/app')['updateAppConfig']
-  const useAnimations: typeof import('../../node_modules/@tresjs/cientos')['useAnimations']
   const useApollo: typeof import('../../node_modules/@nuxtjs/apollo/dist/runtime/composables')['useApollo']
   const useApolloClient: typeof import('@vue/apollo-composable')['useApolloClient']
   const useAppConfig: typeof import('../../node_modules/nuxt/dist/app')['useAppConfig']
   const useAsyncData: typeof import('../../node_modules/nuxt/dist/app')['useAsyncData']
   const useAsyncQuery: typeof import('../../node_modules/@nuxtjs/apollo/dist/runtime/composables')['useAsyncQuery']
   const useAttrs: typeof import('../../node_modules/vue')['useAttrs']
-  const useCamera: typeof import('../../node_modules/@tresjs/core')['useCamera']
   const useCookie: typeof import('../../node_modules/nuxt/dist/app')['useCookie']
   const useCssModule: typeof import('../../node_modules/vue')['useCssModule']
   const useCssVars: typeof import('../../node_modules/vue')['useCssVars']
   const useDevice: typeof import('../../node_modules/@nuxtjs/device/dist/runtime/composables/useDevice')['useDevice']
-  const useEnvironment: typeof import('../../node_modules/@tresjs/cientos')['useEnvironment']
   const useError: typeof import('../../node_modules/nuxt/dist/app')['useError']
-  const useFBX: typeof import('../../node_modules/@tresjs/cientos')['useFBX']
   const useFetch: typeof import('../../node_modules/nuxt/dist/app')['useFetch']
-  const useGLTF: typeof import('../../node_modules/@tresjs/cientos')['useGLTF']
   const useGlobalMutationLoading: typeof import('@vue/apollo-composable')['useGlobalMutationLoading']
   const useGlobalQueryLoading: typeof import('@vue/apollo-composable')['useGlobalQueryLoading']
   const useGlobalSubscriptionLoading: typeof import('@vue/apollo-composable')['useGlobalSubscriptionLoading']
@@ -118,8 +111,6 @@ declare global {
   const useLazyFetch: typeof import('../../node_modules/nuxt/dist/app')['useLazyFetch']
   const useLazyQuery: typeof import('@vue/apollo-composable')['useLazyQuery']
   const useLink: typeof import('../vue-router')['useLink']
-  const useLoader: typeof import('../../node_modules/@tresjs/core')['useLoader']
-  const useLogger: typeof import('../../node_modules/@tresjs/core')['useLogger']
   const useModel: typeof import('../../node_modules/vue')['useModel']
   const useMutation: typeof import('@vue/apollo-composable')['useMutation']
   const useMutationLoading: typeof import('@vue/apollo-composable')['useMutationLoading']
@@ -127,13 +118,8 @@ declare global {
   const useNuxtData: typeof import('../../node_modules/nuxt/dist/app')['useNuxtData']
   const useNuxtDevTools: typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']
   const usePinia: typeof import('../../node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']
-  const usePointerEventHandler: typeof import('../../node_modules/@tresjs/core')['usePointerEventHandler']
-  const useProgress: typeof import('../../node_modules/@tresjs/cientos')['useProgress']
   const useQuery: typeof import('@vue/apollo-composable')['useQuery']
   const useQueryLoading: typeof import('@vue/apollo-composable')['useQueryLoading']
-  const useRaycaster: typeof import('../../node_modules/@tresjs/core')['useRaycaster']
-  const useRenderLoop: typeof import('../../node_modules/@tresjs/core')['useRenderLoop']
-  const useRenderer: typeof import('../../node_modules/@tresjs/core')['useRenderer']
   const useRequestEvent: typeof import('../../node_modules/nuxt/dist/app')['useRequestEvent']
   const useRequestFetch: typeof import('../../node_modules/nuxt/dist/app')['useRequestFetch']
   const useRequestHeaders: typeof import('../../node_modules/nuxt/dist/app')['useRequestHeaders']
@@ -141,7 +127,6 @@ declare global {
   const useRoute: typeof import('../../node_modules/nuxt/dist/app')['useRoute']
   const useRouter: typeof import('../../node_modules/nuxt/dist/app')['useRouter']
   const useRuntimeConfig: typeof import('../../node_modules/nuxt/dist/app')['useRuntimeConfig']
-  const useSeek: typeof import('../../node_modules/@tresjs/core')['useSeek']
   const useSeoMeta: typeof import('../../node_modules/@unhead/vue')['useSeoMeta']
   const useServerHead: typeof import('../../node_modules/@unhead/vue')['useServerHead']
   const useServerHeadSafe: typeof import('../../node_modules/@unhead/vue')['useServerHeadSafe']
@@ -150,13 +135,7 @@ declare global {
   const useState: typeof import('../../node_modules/nuxt/dist/app')['useState']
   const useSubscription: typeof import('@vue/apollo-composable')['useSubscription']
   const useSubscriptionLoading: typeof import('@vue/apollo-composable')['useSubscriptionLoading']
-  const useTexture: typeof import('../../node_modules/@tresjs/core')['useTexture']
   const useTransitionState: typeof import('../../node_modules/vue')['useTransitionState']
-  const useTres: typeof import('../../node_modules/@tresjs/core')['useTres']
-  const useTresContext: typeof import('../../node_modules/@tresjs/core')['useTresContext']
-  const useTresContextProvider: typeof import('../../node_modules/@tresjs/core')['useTresContextProvider']
-  const useTweakPane: typeof import('../../node_modules/@tresjs/cientos')['useTweakPane']
-  const useVideoTexture: typeof import('../../node_modules/@tresjs/cientos')['useVideoTexture']
   const watch: typeof import('../../node_modules/vue')['watch']
   const watchEffect: typeof import('../../node_modules/vue')['watchEffect']
   const watchPostEffect: typeof import('../../node_modules/vue')['watchPostEffect']
@@ -172,8 +151,6 @@ declare global {
 declare global {
   // @ts-ignore
   export type { Component, ComponentPublicInstance, ComputedRef, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, MaybeRef, MaybeRefOrGetter, VNode } from '../../node_modules/vue'
-  // @ts-ignore
-  export type { TresObject } from '../../node_modules/@tresjs/core'
 }
 // for vue template auto import
 import { UnwrapRef } from 'vue'
@@ -204,7 +181,6 @@ declare module 'vue' {
     readonly defineSlots: UnwrapRef<typeof import('../../node_modules/vue')['defineSlots']>
     readonly effect: UnwrapRef<typeof import('../../node_modules/vue')['effect']>
     readonly effectScope: UnwrapRef<typeof import('../../node_modules/vue')['effectScope']>
-    readonly extendTres: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['extend']>
     readonly getCurrentInstance: UnwrapRef<typeof import('../../node_modules/vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('../../node_modules/vue')['getCurrentScope']>
     readonly gql: UnwrapRef<typeof import('../../node_modules/graphql-tag/main')['gql']>
@@ -261,7 +237,6 @@ declare module 'vue' {
     readonly shallowReadonly: UnwrapRef<typeof import('../../node_modules/vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('../../node_modules/vue')['shallowRef']>
     readonly showError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['showError']>
-    readonly stats: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['stats']>
     readonly toRaw: UnwrapRef<typeof import('../../node_modules/vue')['toRaw']>
     readonly toRef: UnwrapRef<typeof import('../../node_modules/vue')['toRef']>
     readonly toRefs: UnwrapRef<typeof import('../../node_modules/vue')['toRefs']>
@@ -269,23 +244,18 @@ declare module 'vue' {
     readonly triggerRef: UnwrapRef<typeof import('../../node_modules/vue')['triggerRef']>
     readonly unref: UnwrapRef<typeof import('../../node_modules/vue')['unref']>
     readonly updateAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['updateAppConfig']>
-    readonly useAnimations: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useAnimations']>
     readonly useApollo: UnwrapRef<typeof import('../../node_modules/@nuxtjs/apollo/dist/runtime/composables')['useApollo']>
     readonly useApolloClient: UnwrapRef<typeof import('@vue/apollo-composable')['useApolloClient']>
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useAppConfig']>
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useAsyncData']>
     readonly useAsyncQuery: UnwrapRef<typeof import('../../node_modules/@nuxtjs/apollo/dist/runtime/composables')['useAsyncQuery']>
     readonly useAttrs: UnwrapRef<typeof import('../../node_modules/vue')['useAttrs']>
-    readonly useCamera: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useCamera']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('../../node_modules/vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('../../node_modules/vue')['useCssVars']>
     readonly useDevice: UnwrapRef<typeof import('../../node_modules/@nuxtjs/device/dist/runtime/composables/useDevice')['useDevice']>
-    readonly useEnvironment: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useEnvironment']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useError']>
-    readonly useFBX: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useFBX']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useFetch']>
-    readonly useGLTF: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useGLTF']>
     readonly useGlobalMutationLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useGlobalMutationLoading']>
     readonly useGlobalQueryLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useGlobalQueryLoading']>
     readonly useGlobalSubscriptionLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useGlobalSubscriptionLoading']>
@@ -296,8 +266,6 @@ declare module 'vue' {
     readonly useLazyFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useLazyFetch']>
     readonly useLazyQuery: UnwrapRef<typeof import('@vue/apollo-composable')['useLazyQuery']>
     readonly useLink: UnwrapRef<typeof import('../vue-router')['useLink']>
-    readonly useLoader: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useLoader']>
-    readonly useLogger: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useLogger']>
     readonly useModel: UnwrapRef<typeof import('../../node_modules/vue')['useModel']>
     readonly useMutation: UnwrapRef<typeof import('@vue/apollo-composable')['useMutation']>
     readonly useMutationLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useMutationLoading']>
@@ -305,13 +273,8 @@ declare module 'vue' {
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useNuxtData']>
     readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePinia: UnwrapRef<typeof import('../../node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']>
-    readonly usePointerEventHandler: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['usePointerEventHandler']>
-    readonly useProgress: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useProgress']>
     readonly useQuery: UnwrapRef<typeof import('@vue/apollo-composable')['useQuery']>
     readonly useQueryLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useQueryLoading']>
-    readonly useRaycaster: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useRaycaster']>
-    readonly useRenderLoop: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useRenderLoop']>
-    readonly useRenderer: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useRenderer']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestFetch']>
     readonly useRequestHeaders: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestHeaders']>
@@ -319,7 +282,6 @@ declare module 'vue' {
     readonly useRoute: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRouter']>
     readonly useRuntimeConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRuntimeConfig']>
-    readonly useSeek: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useSeek']>
     readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useSeoMeta']>
     readonly useServerHead: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useServerHead']>
     readonly useServerHeadSafe: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useServerHeadSafe']>
@@ -328,13 +290,7 @@ declare module 'vue' {
     readonly useState: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useState']>
     readonly useSubscription: UnwrapRef<typeof import('@vue/apollo-composable')['useSubscription']>
     readonly useSubscriptionLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useSubscriptionLoading']>
-    readonly useTexture: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useTexture']>
     readonly useTransitionState: UnwrapRef<typeof import('../../node_modules/vue')['useTransitionState']>
-    readonly useTres: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useTres']>
-    readonly useTresContext: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useTresContext']>
-    readonly useTresContextProvider: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useTresContextProvider']>
-    readonly useTweakPane: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useTweakPane']>
-    readonly useVideoTexture: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useVideoTexture']>
     readonly watch: UnwrapRef<typeof import('../../node_modules/vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('../../node_modules/vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('../../node_modules/vue')['watchPostEffect']>
@@ -374,7 +330,6 @@ declare module '@vue/runtime-core' {
     readonly defineSlots: UnwrapRef<typeof import('../../node_modules/vue')['defineSlots']>
     readonly effect: UnwrapRef<typeof import('../../node_modules/vue')['effect']>
     readonly effectScope: UnwrapRef<typeof import('../../node_modules/vue')['effectScope']>
-    readonly extendTres: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['extend']>
     readonly getCurrentInstance: UnwrapRef<typeof import('../../node_modules/vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('../../node_modules/vue')['getCurrentScope']>
     readonly gql: UnwrapRef<typeof import('../../node_modules/graphql-tag/main')['gql']>
@@ -431,7 +386,6 @@ declare module '@vue/runtime-core' {
     readonly shallowReadonly: UnwrapRef<typeof import('../../node_modules/vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('../../node_modules/vue')['shallowRef']>
     readonly showError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['showError']>
-    readonly stats: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['stats']>
     readonly toRaw: UnwrapRef<typeof import('../../node_modules/vue')['toRaw']>
     readonly toRef: UnwrapRef<typeof import('../../node_modules/vue')['toRef']>
     readonly toRefs: UnwrapRef<typeof import('../../node_modules/vue')['toRefs']>
@@ -439,23 +393,18 @@ declare module '@vue/runtime-core' {
     readonly triggerRef: UnwrapRef<typeof import('../../node_modules/vue')['triggerRef']>
     readonly unref: UnwrapRef<typeof import('../../node_modules/vue')['unref']>
     readonly updateAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['updateAppConfig']>
-    readonly useAnimations: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useAnimations']>
     readonly useApollo: UnwrapRef<typeof import('../../node_modules/@nuxtjs/apollo/dist/runtime/composables')['useApollo']>
     readonly useApolloClient: UnwrapRef<typeof import('@vue/apollo-composable')['useApolloClient']>
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useAppConfig']>
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useAsyncData']>
     readonly useAsyncQuery: UnwrapRef<typeof import('../../node_modules/@nuxtjs/apollo/dist/runtime/composables')['useAsyncQuery']>
     readonly useAttrs: UnwrapRef<typeof import('../../node_modules/vue')['useAttrs']>
-    readonly useCamera: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useCamera']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('../../node_modules/vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('../../node_modules/vue')['useCssVars']>
     readonly useDevice: UnwrapRef<typeof import('../../node_modules/@nuxtjs/device/dist/runtime/composables/useDevice')['useDevice']>
-    readonly useEnvironment: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useEnvironment']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useError']>
-    readonly useFBX: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useFBX']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useFetch']>
-    readonly useGLTF: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useGLTF']>
     readonly useGlobalMutationLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useGlobalMutationLoading']>
     readonly useGlobalQueryLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useGlobalQueryLoading']>
     readonly useGlobalSubscriptionLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useGlobalSubscriptionLoading']>
@@ -466,8 +415,6 @@ declare module '@vue/runtime-core' {
     readonly useLazyFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useLazyFetch']>
     readonly useLazyQuery: UnwrapRef<typeof import('@vue/apollo-composable')['useLazyQuery']>
     readonly useLink: UnwrapRef<typeof import('../vue-router')['useLink']>
-    readonly useLoader: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useLoader']>
-    readonly useLogger: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useLogger']>
     readonly useModel: UnwrapRef<typeof import('../../node_modules/vue')['useModel']>
     readonly useMutation: UnwrapRef<typeof import('@vue/apollo-composable')['useMutation']>
     readonly useMutationLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useMutationLoading']>
@@ -475,13 +422,8 @@ declare module '@vue/runtime-core' {
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useNuxtData']>
     readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePinia: UnwrapRef<typeof import('../../node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']>
-    readonly usePointerEventHandler: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['usePointerEventHandler']>
-    readonly useProgress: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useProgress']>
     readonly useQuery: UnwrapRef<typeof import('@vue/apollo-composable')['useQuery']>
     readonly useQueryLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useQueryLoading']>
-    readonly useRaycaster: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useRaycaster']>
-    readonly useRenderLoop: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useRenderLoop']>
-    readonly useRenderer: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useRenderer']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestFetch']>
     readonly useRequestHeaders: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestHeaders']>
@@ -489,7 +431,6 @@ declare module '@vue/runtime-core' {
     readonly useRoute: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRouter']>
     readonly useRuntimeConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRuntimeConfig']>
-    readonly useSeek: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useSeek']>
     readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useSeoMeta']>
     readonly useServerHead: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useServerHead']>
     readonly useServerHeadSafe: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useServerHeadSafe']>
@@ -498,13 +439,7 @@ declare module '@vue/runtime-core' {
     readonly useState: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useState']>
     readonly useSubscription: UnwrapRef<typeof import('@vue/apollo-composable')['useSubscription']>
     readonly useSubscriptionLoading: UnwrapRef<typeof import('@vue/apollo-composable')['useSubscriptionLoading']>
-    readonly useTexture: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useTexture']>
     readonly useTransitionState: UnwrapRef<typeof import('../../node_modules/vue')['useTransitionState']>
-    readonly useTres: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useTres']>
-    readonly useTresContext: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useTresContext']>
-    readonly useTresContextProvider: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useTresContextProvider']>
-    readonly useTweakPane: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useTweakPane']>
-    readonly useVideoTexture: UnwrapRef<typeof import('../../node_modules/@tresjs/cientos')['useVideoTexture']>
     readonly watch: UnwrapRef<typeof import('../../node_modules/vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('../../node_modules/vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('../../node_modules/vue')['watchPostEffect']>

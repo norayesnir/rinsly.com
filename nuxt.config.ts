@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     'nuxt-icon', 
     '@pinia/nuxt',
     '@nuxtjs/device',
-    '@tresjs/nuxt',
   ],
 
   app: {
@@ -30,6 +29,10 @@ export default defineNuxtConfig({
       prepr: './apollo/prepr.ts',
     },
   },
+
+  buildModules: [
+    '@nuxtjs/composition-api'
+  ],
 
   // If deploying with Vercel, add config below
   build: {
