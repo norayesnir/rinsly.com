@@ -47,13 +47,7 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {
-    "device": {
-      "enabled": true,
-      "defaultUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.39 Safari/537.36",
-      "refreshOnResize": false
-    }
-  }
+  "public": {}
 };
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _inlineRuntimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";

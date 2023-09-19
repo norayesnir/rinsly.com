@@ -12,7 +12,6 @@ export default defineNuxtConfig({
     '@nuxtjs/apollo', 
     'nuxt-icon', 
     '@pinia/nuxt',
-    '@nuxtjs/device',
   ],
 
   app: {

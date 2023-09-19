@@ -2,7 +2,6 @@
 /// <reference types="@nuxtjs/apollo" />
 /// <reference types="nuxt-icon" />
 /// <reference types="@pinia/nuxt" />
-/// <reference types="@nuxtjs/device" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />
