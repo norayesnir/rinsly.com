@@ -30,10 +30,6 @@ export default defineNuxtConfig({
     },
   },
 
-  buildModules: [
-    '@nuxtjs/composition-api'
-  ],
-
   // If deploying with Vercel, add config below
   build: {
     transpile: ["tslib"],

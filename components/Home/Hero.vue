@@ -13,16 +13,19 @@
         </component>
       </div>
     </div>
-    <div></div>
+    <div>
+      <img :src="img.url" :alt="img._id" />
+    </div>
   </div>
 </template>
 
 <script setup>
 import { computed } from "vue";
 
-import { GetHero } from "@/queries/home/get-hero";
+import { GetHero } from "~/queries/home/get-hero";
 const { data } = await useAsyncQuery(GetHero);
 const hero = data.value.HomepageHero;
+const img = hero.image;
 
 // Import the components
 import Button from "@/components/App/Button";

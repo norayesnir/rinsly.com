@@ -12,6 +12,8 @@
 <style scoped lang="scss">
 .app {
   position: relative;
+  width: 100vw;
+  overflow: hidden;
 
   .navigation-container {
     position: fixed;
