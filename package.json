@@ -10,7 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@apollo/rover": "^0.18.1",
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.7.3"
+    "@nuxtjs/apollo": "^5.0.0-alpha.6",
+    "@nuxtjs/device": "^3.1.1",
+    "nuxt": "^3.7.3",
+    "nuxt-icon": "^0.5.0",
+    "sass": "^1.67.0"
+  },
+  "dependencies": {
+    "@nuxtjs/composition-api": "^0.33.1",
+    "@pinia/nuxt": "^0.4.11",
+    "pinia": "^2.1.6"
   }
 }

@@ -45,11 +45,20 @@
       "assets": [
         "../assets"
       ],
+      "assets/*": [
+        "../assets/*"
+      ],
       "public": [
         "../public"
       ],
       "public/*": [
         "../public/*"
+      ],
+      "#apollo": [
+        "./apollo"
+      ],
+      "pinia": [
+        "../node_modules/pinia/dist/pinia"
       ]
     }
   },

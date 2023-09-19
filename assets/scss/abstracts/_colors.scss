@@ -1,0 +1,80 @@
+:root {
+  /* 🎨 Torch Red */
+  --torch-red-900: #220003; /* 900 */
+  --torch-red-800: #3e020a; /* 800 */
+  --torch-red-700: #7e091a; /* 700 */
+  --torch-red-500: #c1122f; /* 500 */
+  --torch-red-400: #ff1c42; /* 400 */
+  --torch-red-90: #ff6979; /* 90 */
+  --torch-red-60: #ff9f95; /* 60 */
+  --torch-red-40: #ffbda5; /* 40 */
+  --torch-red-20: #ffdecc; /* 20 */
+
+  --torch-red: var(--torch-red-400);
+
+  /* 🎨 Malibu */
+  --malibu-900: #020c27; /* 900 */
+  --malibu-800: #051b32; /* 800 */
+  --malibu-600: #0f3c52; /* 600 */
+  --malibu-300: #1e6d83; /* 300 */
+  --malibu-80: #32adc2; /* 80 */
+  --malibu-40: #47e9ff; /* 40 */
+  --malibu-30: #8ce8ff; /* 30 */
+  --malibu-20: #d2ecff; /* 20 */
+  --malibu-10: #f5f7ff; /* 10 */
+
+  --malibu: var(--malibu-80);
+
+  /* 🎨 Denim */
+  --denim-800: #001a1c; /* 800 */
+  --denim-700: #01272d; /* 700 */
+  --denim-500: #064558; /* 500 */
+  --denim-400: #0d6489; /* 400 */
+  --denim-200: #147eb3; /* 200 */
+  --denim-90: #4f9ac7; /* 90 */
+  --denim-70: #79acd9; /* 70 */
+  --denim-50: #a4c2e8; /* 50 */
+  --denim-20: #e0e8f6; /* 20 */
+
+  --denim: var(--denim-200);
+
+  /* 🎨 Baltic Sea */
+  --baltic-sea-900: #09090a; /* 900 */
+  --baltic-sea-800: #101013; /* 800 */
+  --baltic-sea-700: #252329; /* 700 */
+  --baltic-sea-500: #46454a; /* 500 */
+  --baltic-sea-200: #68676b; /* 200 */
+  --baltic-sea-90: #8a898c; /* 90 */
+  --baltic-sea-60: #acabad; /* 60 */
+  --baltic-sea-40: #cccbcd; /* 40 */
+  --baltic-sea-20: #ebebeb; /* 20 */
+
+  --baltic-sea: var(--baltic-sea-500);
+
+  /* 🎨 Studio */
+  --studio-900: #020821; /* 900 */
+  --studio-800: #0b0d34; /* 800 */
+  --studio-700: #231c5e; /* 700 */
+  --studio-500: #482f8b; /* 500 */
+  --studio-400: #6a40b1; /* 400 */
+  --studio-100: #9a6bca; /* 100 */
+  --studio-80: #c987e2; /* 80 */
+  --studio-50: #e9a9f2; /* 50 */
+  --studio-20: #f9e0fb; /* 20 */
+
+  --studio: var(--studio-400);
+}
+
+.light-mode {
+  --foreground: var(--baltic-sea-900);
+  --background: white;
+
+  --description: var(--baltic-sea);
+}
+
+.dark-mode {
+  --foreground: white;
+  --background: var(--baltic-sea-900);
+
+  --description: var(--baltic-sea-60);
+}
