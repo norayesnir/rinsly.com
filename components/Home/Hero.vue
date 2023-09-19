@@ -43,6 +43,8 @@ const page = data.value.HomepageHero;
 const buttons = computed(() => {
   return page.buttons;
 });
+
+console.log(data.value.HomepageHero);
 </script>
 
 <style scoped lang="scss">
