@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="frame">
-      <img class="image" :src="img.url" :alt="img._id" />
+      <img :src="img.url" :alt="img._id" />
     </div>
   </div>
 </template>
@@ -43,8 +43,6 @@ const page = data.value.HomepageHero;
 const buttons = computed(() => {
   return page.buttons;
 });
-
-console.log(data.value.HomepageHero);
 </script>
 
 <style scoped lang="scss">
@@ -99,5 +97,12 @@ console.log(data.value.HomepageHero);
       visibility: visible;
     }
   }
+}
+
+video {
+  z-index: 10;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
 </style>

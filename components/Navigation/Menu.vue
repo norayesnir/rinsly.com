@@ -1,12 +1,12 @@
 <template>
-  <div
-    class="navigation-container"
-    :class="{ 'navigation-active': navigationMenu.navigationState }"
-  >
+  <div class="navigation-container" :class="{ 'navigation-active': navigationMenu.navigationState }">
     <div class="navigation-menu">
       <NuxtLink to="/">
         <AppLogo />
       </NuxtLink>
+      <div class="bar-routes">
+        <NavigationRoute />
+      </div>
       <div class="right-side">
         <div class="desktop-routes"></div>
         <SettingsAppearance />
@@ -40,6 +40,19 @@ const navigationMenu = useNavigationMenuStore();
     padding: 16px 16px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    .bar-routes {
+      display: none;
+      visibility: hidden;
+    }
+
+    @media screen and (min-width: 750px) {
+      .bar-routes {
+        display: inherit;
+        visibility: visible;
+      }
+    }
 
     .right-side {
       display: flex;

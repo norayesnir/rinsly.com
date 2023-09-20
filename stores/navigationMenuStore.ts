@@ -3,6 +3,7 @@ import { defineStore } from "pinia";
 export const useNavigationMenuStore = defineStore("navigationMenu", {
   state: () => ({
     navigationState: false,
+    menuItemState: false,
   }),
 
   actions: {
@@ -10,5 +11,10 @@ export const useNavigationMenuStore = defineStore("navigationMenu", {
       // Toggle navigationState
       this.navigationState = !this.navigationState;
     },
+
+    toggleMenuItem(){
+      // Toggle routeState (if it has children)
+      this.menuItemState = !this.menuItemState;
+    }
   },
 });

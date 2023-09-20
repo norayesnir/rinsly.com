@@ -1,3 +1,34 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: "De Toekomst van Online Succes Begint Hier",
+  description:
+    "Ontdek onze performance-gedreven web— en app—oplossingen voor een voorsprong in de digitale wereld.",
+  ogTitle: "De Toekomst van Online Succes Begint Hier",
+  ogDescription:
+    "Ontdek onze performance-gedreven web— en app—oplossingen voor een voorsprong in de digitale wereld.",
+  ogImage: "[og:image]",
+  ogUrl: "https://rinsly.com/",
+  twitterTitle: "De Toekomst van Online Succes Begint Hier",
+  twitterDescription:
+    "Ontdek onze performance-gedreven web— en app—oplossingen voor een voorsprong in de digitale wereld.",
+  twitterImage: "[twitter:image]",
+  twitterCard: "summary",
+});
+
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+  link: [
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon.png",
+    },
+  ],
+});
+</script>
+
 <template>
   <div class="page">
     <HomeHero />
